@@ -170,5 +170,84 @@
 .ready-right
 	padding-left: 40px
 
+
+.formsection
+	padding: 30px 0
+	background-color: $dark
+	input
+		background-color: lighten($dark, 6%)
+	form
+		grid-gap: $gutter
+		grid-template-columns: repeat(4, 1fr)
+	.button
+		font-size: 17px
+		padding: 14.5px
+		width: 100%
+
+input, textarea
+	border: none
+	padding: 15px 20px
+	width: 100%
+	font-family: Arial, sans-serif
+	font-style: italic
+	outline: none
+	transition: background-color .25s ease
+	&:focus
+		background-color: $light
+	&::placeholder
+		color: lighten($dark, 20%)
+
+.section-blog
+	h2
+		margin: 
+			top: 0
+			bottom: 50px
+	.buttoncase
+		padding-bottom: 0
+.blog-home
+	grid-gap: $gutter
+	grid-template-columns: repeat(4, 1fr)
+
+.blog-item
+	background-color: #F7F7F7
+	text-decoration: none
+	grid-template-rows: 1fr 1fr 
+	transition: background-color .25s ease //изменение цвета при наведении на карточки
+	overflow: hidden
+	color: #333
+	&:nth-child(3) //растягивание изоб-я на 2 колонны
+		grid-column: 3 / 5
+	&:nth-child(4)
+		grid-column: 1 / 3
+	&:hover
+		background-color: $light
+		h4
+			color: $dark
+		.blog-item-img	
+			transform: scale(1.05) translateY(-6.5px) //увеличение картинки и сдвиг вверх по оси Y
+
+	&-img 
+		height: 270px
+		background-size: cover
+		background-position: center
+		transition: transform .25s ease // увеличение картинки при наведении
+	&-content	
+		padding: 25px
+		text-align: center
+		align-content: center
+	h4
+		font-size: 18px
+		color: #666
+		line-height: 1.3
+		margin: 0
+		transition: color .25s ease //анимация цвета заголовка
+	p
+		margin:
+			top: 20px
+			bottom: 0
+
+
+
+
 // Всегда в конце
 @import media
