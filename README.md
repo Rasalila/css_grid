@@ -13,8 +13,7 @@ HTML5, CSS3, Grid, SASS, Gulp, Git
 * форма регистрации
 * секция блога со статьями
 
-<img width="700" src="./app/img/screen1.png">
-<img width="700" src="./app/img/screen3.png">
+![myGif](./app/img/gif.gif)
 
 ## Результат:
 
